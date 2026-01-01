@@ -1,0 +1,38 @@
+/* Combined app.css */
+
+body, html, #root { height:100%; margin:0; font-family: Inter, Arial, sans-serif; }
+body { background:#efe3d0; }
+
+.app-root { padding: 18px; background: #efe0cc; min-height: 100vh; }
+.home-panel { display:flex; flex-direction:column; gap:10px; align-items: center; }
+.game-screen { display:flex; gap:12px; }
+.left-col { flex:1; }
+.right-col { width:340px; display:flex; flex-direction:column; gap:12px; }
+.board-wrap { position:relative; border-radius: 8px; padding: 8px; }
+.board-svg { width:900px; height: 700px; display:block; }
+
+.header { display:flex; justify-content:space-between; padding:12px; background:#f4e7d4; }
+
+.dialog-overlay { position: fixed; left:0; right:0; top:0; bottom:0; background:rgba(0,0,0,0.45); display:flex; align-items: center; justify-content:center; }
+.dialog { background: white; border-radius: 8px; padding: 16px; width: 360px; box-shadow: 0 6px 30px rgba(0,0,0,0.25); position:fixed; top:30%; left:40%; border:1px solid #333; }
+.dialog-actions button { margin-right:8px; }
+
+.player-panel { background:#fff7ed; padding: 12px; border-radius: 8px; box-shadow:0 3px 12px rgba(0,0,0,0.08); }
+.toolbar { background:#fff; padding: 12px; border-radius: 8px; }
+
+.resource-cards { margin-top:12px; }
+.cards-row { display:flex; gap: 8px; margin-top: 8px; }
+.resource-card { background:#fff; padding: 6px 8px; border-radius: 6px; min-width: 72px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+.rc-title { font-size:12px; color:#444; }
+.rc-count { font-weight:700; font-size: 18px; }
+
+.edge-highlight { stroke-width:6px; }
+
+.dice-widget { position:absolute; right:18px; top:18px; }
+.dice { background: #fff; padding: 10px; border-radius: 8px; display:inline-block; cursor: pointer; box-shadow:0 4px 16px rgba(0,0,0,0.12); }
+.dice.rolling { transform: rotate(30deg); transition:transform 0.3s ease-in-out; }
+
+.loading { padding: 18px; }
+
+.tile { cursor:pointer; }
+
